@@ -20,7 +20,7 @@ In this project, we aim to forecast store sales using historical sales data and 
 
 The project uses multiple datasets from the Kaggle competition [Store Sales - Time Series Forecasting](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data):
 
--`train.csv`: Historical sales data
+- `train.csv`: Historical sales data
 - `test.csv`: Test data for making predictions
 - `oil.csv`: Daily oil prices
 - `holidays_events.csv`: Holiday and event information
@@ -28,6 +28,7 @@ The project uses multiple datasets from the Kaggle competition [Store Sales - Ti
 - `transactions.csv`: Store transaction counts
 
 These datasets are merged and preprocessed to create a comprehensive dataset for training and testing the models.
+
 
 ## Installation
 
