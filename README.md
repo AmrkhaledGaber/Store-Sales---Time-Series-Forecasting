@@ -8,10 +8,12 @@ Project Overview :
    - Model Training:
         Train a neural network model using Keras with dropout and L2 regularization.
         Implement custom accuracy metrics to evaluate model performance.
+     
     -Evaluation:
         Plot training and validation loss to visualize model performance.
         Use the trained model to make predictions on the test data.
         Save the predictions to a CSV file for submission to Kaggle.
+        
     - Time Series Forecasting with LSTM:
         Prepare the data for time series forecasting by creating sequences.
         Train an LSTM model to capture temporal dependencies in the sales data.
