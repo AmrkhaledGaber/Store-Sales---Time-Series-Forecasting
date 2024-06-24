@@ -1,46 +1,67 @@
-Store Sales - Time Series Forecasting
+# Store Sales - Time Series Forecasting
 
-Project Overview : 
-  - Data Loading and Preprocessing:
-        Load the data from various CSV files provided by Kaggle.
-        Merge and clean the data, handling missing values and irrelevant columns.
-        Encode categorical variables and scale numerical variables.
-   - Model Training:
-        Train a neural network model using Keras with dropout and L2 regularization.
-        Implement custom accuracy metrics to evaluate model performance.
-     
-    -Evaluation:
-        Plot training and validation loss to visualize model performance.
-        Use the trained model to make predictions on the test data.
-        Save the predictions to a CSV file for submission to Kaggle.
-        
-    - Time Series Forecasting with LSTM:
-        Prepare the data for time series forecasting by creating sequences.
-        Train an LSTM model to capture temporal dependencies in the sales data.
-        Evaluate and visualize the LSTM model's performance.
+This repository contains the code and resources for the "Store Sales - Time Series Forecasting" project. The goal of this project is to predict grocery sales using neural networks and time series data from Corporación Favorita, a large Ecuadorian-based grocery retailer. The forecasting model aims to improve inventory management and enhance customer satisfaction by accurately predicting future sales.
 
-Key Features :
-    -Custom Accuracy Metric: A custom accuracy function is used to evaluate the model's performance, focusing on predictions within a specific threshold.
-   - Data Integration: Merging multiple datasets (sales, stores, oil prices, holidays, and transactions) to enrich the training data.
-   -Regularization: Implementing dropout and L2 regularization in the neural network to prevent overfitting.
-    -Time Series Forecasting: Using LSTM networks to model and predict future sales based on past data.
+## Table of Contents
 
-Repository Structure
-    -train.csv: Training data with historical sales records.
-    -test.csv: Test data for making predictions.
-    -oil.csv: Daily oil prices.
-    -holidays_events.csv: Holiday and event data.
-    -stores.csv: Information about the stores.
-    -transactions.csv: Transaction data for each store.
-    -model.py: Python script containing the neural network model.
-    -lstm_model.py: Python script containing the LSTM model.
-    -README.md: Project description and instructions.
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Usage](#usage)
+- [Model Description](#model-description)
+- [Evaluation](#evaluation)
+- [Results](#results)
+- [Contributing](#contributing)
 
-Requirements
-    Python 3.x,
-    pandas,
-    numpy,
-    scikit-learn,
-    tensorflow,
-    keras,
-    matplotlib
+## Project Overview
+
+In this project, we aim to forecast store sales using historical sales data and other related datasets. By leveraging neural networks and LSTM models, we can capture patterns and trends in the data to make accurate predictions. The project includes data preprocessing, model training, and evaluation steps.
+
+## Dataset
+
+The project uses multiple datasets:
+
+- `train.csv`: Historical sales data
+- `test.csv`: Test data for making predictions
+- `oil.csv`: Daily oil prices
+- `holidays_events.csv`: Holiday and event information
+- `stores.csv`: Store metadata
+- `transactions.csv`: Store transaction counts
+
+These datasets are merged and preprocessed to create a comprehensive dataset for training and testing the models.
+
+## Installation
+
+To run the code in this repository, you need to have Python 3.x installed. The following Python packages are required:
+
+- numpy
+- pandas
+- scikit-learn
+- tensorflow
+- keras
+- matplotlib
+
+
+
+
+## Model Description
+
+### Neural Network Model
+
+The neural network model is a sequential model with dense layers and dropout regularization. It is trained to predict sales based on various features.
+
+### LSTM Model
+
+The LSTM model is designed for time series forecasting. It captures temporal dependencies in the data by using sequences of past sales data to predict future sales.
+
+## Evaluation
+
+The models are evaluated using mean squared error (MSE) and custom accuracy metrics. Training and validation loss are plotted to visualize the model's performance.
+
+## Results
+
+The results of the predictions are saved in a CSV file. The actual vs. predicted sales values are plotted to show the performance of the models.
+
+## Contributing
+
+Contributions to this project are welcome. If you have any ideas, suggestions, or bug fixes, feel free to create a pull request.
+
